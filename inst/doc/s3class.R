@@ -9,7 +9,7 @@ htmltools::includeHTML("../man/figures/object-tree.svg")
 
 ## ----setup--------------------------------------------------------------------
 library(ProTrackR2)
-mod <- pt2_read_mod(system.file("mod.intro", package = "ProTrackR2"))
+mod <- pt2_read_mod(pt2_demo())
 mod
 
 ## ----play, eval=FALSE---------------------------------------------------------
@@ -26,7 +26,7 @@ mod$patterns
 
 ## ----tab-pattern, echo=FALSE, message=FALSE, warning=FALSE--------------------
 library(ProTrackR2)
-mod <- pt2_read_mod(system.file("mod.intro", package = "ProTrackR2"))
+mod <- pt2_read_mod(pt2_demo())
 
 mat <-
   mod$patterns[[1]] |>
